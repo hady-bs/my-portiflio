@@ -1,4 +1,4 @@
-export default function OtherSkills({ data }) {
+export default function OtherSkills({ data }: { data: string[] }) {
   return (
     <div className="bg-gradient-to-t from-primary from-90% to-transparent backdrop-blur-lg flex flex-col gap-10 py-10 sticky top-0">
       <div className="text-4xl text-center  text-primary-text animate-pulse">

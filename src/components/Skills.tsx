@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-export default function Skills({ data }) {
+import type { Skill } from "../types/types";
+export default function Skills({ data }: { data: Skill[] }) {
   return (
     <div className="overflow-hidden bg-gradient-to-t from-primary from-90%  to-transparent backdrop-blur-lg flex flex-col gap-10 py-10 sticky top-0">
       <div className="text-4xl text-center  text-primary-text animate-pulse">

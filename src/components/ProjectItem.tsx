@@ -1,4 +1,12 @@
-export default function ProjectItem({ item, itemIndex }) {
+import type { Project } from "../types/types";
+
+export default function ProjectItem({
+  item,
+  itemIndex,
+}: {
+  item: Project;
+  itemIndex: number;
+}) {
   return (
     <div
       key={itemIndex}

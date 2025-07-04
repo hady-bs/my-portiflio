@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-export default function Education({ data }) {
+import type { EducationItem } from "../types/types";
+export default function Education({ data }: { data: EducationItem[] }) {
   return (
     <motion.div
       whileInView={{ opacity: 1 }}

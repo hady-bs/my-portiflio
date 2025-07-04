@@ -5,8 +5,18 @@ import OtherSkills from "./components/OtherSkills";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import useGetData from "./hooks/useGetData";
+import type PortfolioData from "./types/types";
+
 function App() {
-  const { data, isLoading, error } = useGetData();
+  const {
+    data,
+    isLoading,
+    error,
+  }: {
+    data: PortfolioData | undefined;
+    isLoading: boolean;
+    error: Error | null;
+  } = useGetData();
   console.log(data);
   if (isLoading)
     return (
@@ -31,6 +41,15 @@ function App() {
         <div className="grid md:grid-cols-2 ">
           <Education data={data.record.Education} />
           <Languages data={data.record.languages} />
+        </div>
+      </div>
+    );
+  if (error)
+    return (
+      <div className="flex items-center flex-col gap-5 justify-center w-screen h-screen">
+        <div className="text-white text-5xl animate-pulse">{error?.name}</div>
+        <div className="text-secondry-text text-3xl animate-pulse">
+          {error?.message}
         </div>
       </div>
     );

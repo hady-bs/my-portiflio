@@ -7,7 +7,7 @@ export default function Skills({ data }: { data: Skill[] }) {
         My Skills
       </div>
       <div className="sticky top-0 md:gap-10 gap-5 w-full lg:grid-cols-5  grid-cols-2 grid">
-        {data.map((item, index) => (
+        {data?.map((item, index) => (
           <motion.div
             key={index}
             whileInView={{ translateX: 0, opacity: 1 }}

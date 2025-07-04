@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 export default function Hero() {
-  console.log([...Array(100)]);
   return (
     <div className="flex flex-col justify-center gap-24 my-32 sticky top-0">
       <div className="relative">

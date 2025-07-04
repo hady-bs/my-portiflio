@@ -13,7 +13,7 @@ export default function Education({ data }: { data: EducationItem[] }) {
         Education
       </div>
       <div className="flex flex-col  md:flex-row mx-auto gap-5">
-        {data.map((item, indexItem) => (
+        {data?.map((item, indexItem) => (
           <div
             key={indexItem}
             className={` ${

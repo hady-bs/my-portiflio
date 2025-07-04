@@ -5,7 +5,7 @@ export default function OtherSkills({ data }: { data: string[] }) {
         Other Skills
       </div>
       <div className="md:w-full w-[90%] mx-auto flex gap-3 flex-wrap md:justify-center">
-        {data.map((item, itemIndex) => (
+        {data?.map((item, itemIndex) => (
           <div
             key={itemIndex}
             className="px-3 py-2 text-secondry-text rounded-xl  backdrop-blur-[100px] bg-white/10"

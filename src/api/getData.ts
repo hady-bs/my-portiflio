@@ -1,6 +1,6 @@
 import type PortfolioData from "../types/types";
 
-export default async function getData(): Promise<PortfolioData> {
+export default async function getData(): Promise<any> {
   const response = await fetch(
     "https://api.jsonbin.io/v3/b/657f0a361f5677401f0efbc3",
     {
@@ -11,5 +11,5 @@ export default async function getData(): Promise<PortfolioData> {
     }
   );
   const data: PortfolioData = await response.json();
-  return data;
+  return data.record;
 }

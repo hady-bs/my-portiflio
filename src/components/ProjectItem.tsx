@@ -28,7 +28,7 @@ export default function ProjectItem({
       <div className="text-2xl text-center text-white">{item.name}</div>
       <div className="px-1">{item.description}</div>
       <div className="flex flex-row flex-wrap gap-1">
-        {item.languages.map((item2, item2Index) => (
+        {item?.languages?.map((item2, item2Index) => (
           <div
             key={item2Index}
             className="px-2 py-1   border-primary-text border-b-2 hover:text-secondry-text hover:border-secondry-text duration-300 cursor-pointer"

@@ -1,6 +1,7 @@
+import { lazy } from "react";
 import type { Project } from "../types/types";
-import ProjectItem from "./ProjectItem";
 
+const ProjectItem = lazy(() => import("./ProjectItem"));
 export default function Projects({ data }: { data: Project[] }) {
   return (
     <div className="  bg-gradient-to-t from-primary from-90% to-transparent backdrop-blur-lg flex flex-col gap-10 py-10  ">
@@ -8,7 +9,7 @@ export default function Projects({ data }: { data: Project[] }) {
         Projects
       </div>
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
-        {data.map((item, itemIndex) => (
+        {data?.map((item, itemIndex) => (
           <ProjectItem item={item} itemIndex={itemIndex} key={itemIndex} />
         ))}
       </div>

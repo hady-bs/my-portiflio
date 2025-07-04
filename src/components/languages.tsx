@@ -6,7 +6,7 @@ export default function Languages({ data }: { data: Language[] }) {
       <div className="text-4xl text-center  text-primary-text animate-pulse">
         Languages
       </div>
-      {data.map((item, itemIndex) => (
+      {data?.map((item, itemIndex) => (
         <div
           className="relative rounded-3xl overflow-hidden py-5 md:w-full w-[90%] mx-auto  bg-secondry-text"
           key={itemIndex}

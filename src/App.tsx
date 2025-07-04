@@ -46,17 +46,18 @@ function App() {
 
   if (data)
     return (
-      <Suspense
-        fallback={
-          <div className="flex justify-center items-center h-screen">
-            <div className="loader text-3xl text-white">
-              loading <span className="animate-pulse">...</span>
+      <div className="flex flex-col container mx-auto ">
+        <Hero />
+
+        <Suspense
+          fallback={
+            <div className="flex justify-center items-center h-screen">
+              <div className="loader text-3xl text-white">
+                loading <span className="animate-pulse">...</span>
+              </div>
             </div>
-          </div>
-        }
-      >
-        <div className="flex flex-col container mx-auto">
-          <Hero />
+          }
+        >
           <Projects data={data.record.projects} />
           <Skills data={data.record.skills} />
           <OtherSkills data={data.record.otherSkills} />
@@ -64,8 +65,8 @@ function App() {
             <Education data={data.record.Education} />
             <Languages data={data.record.languages} />
           </div>
-        </div>
-      </Suspense>
+        </Suspense>
+      </div>
     );
 }
 

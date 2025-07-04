@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 export default function Hero() {
   return (
-    <div className="flex flex-col justify-center gap-24 my-32 sticky top-0">
-      <div className="relative">
+    <div className="flex flex-col justify-center gap-24 py-32 sticky top-0 overflow-hidden">
+      <div className="">
         <motion.div
           initial={{ rotate: 0 }}
           animate={{ rotate: 360 }}
@@ -11,20 +11,30 @@ export default function Hero() {
             ease: "linear",
             repeat: Infinity,
           }}
-          className=" relative z-[100] mx-auto md:w-64 w-32 aspect-square bg-gradient-to-b from-primary via-gray-500 to-secondry-text rounded-full shadow-[0px_2px_100px_var(--color-accent-color)] before:content-[''] before:absolute before:w-2 before:aspect-square before:rounded-full before:bg-gradient-to-l before:from-primary before:via-gray-500 before:to-white before:shadow-[0px_0px_10px_white] before:right-10"
+          className=" relative z-[100] mx-auto md:w-64 w-32 aspect-square bg-gradient-to-b from-primary via-gray-500 to-secondry-text rounded-full shadow-[0px_2px_100px_var(--color-accent-color)] before:content-[''] before:absolute before:w-2 before:aspect-square before:rounded-full before:bg-gradient-to-l before:from-white via-50% before:to-primary before:shadow-[0px_0px_10px_white,0px_0px_1px_white]  before:right-0 before:top-full"
         ></motion.div>
 
         {[...Array(100)].map((star: undefined, starIndex: number) => (
-          <div
+          <motion.div
             key={starIndex}
-            className="absolute w-[2px] aspect-square rotate-90 bg-accent-color animate-pulse shadow-[0px_0px_1px_var(--color-white)]"
-            style={{
-              left: Math.floor(Math.random() * 100) + "%",
-              top: Math.floor(Math.random() * 100) + "%",
+            className="absolute w-[2px] aspect-square  rotate-45 bg-accent-color animate-pulse shadow-[0px_0px_1px_var(--color-white)]"
+            initial={{
+              left: Math.random() * 100 + "%",
+              top: Math.random() * 100 + "%",
+            }}
+            animate={{
+              left: Math.random() * 100 + "%",
+              top: Math.random() * 100 + "%",
+            }}
+            transition={{
+              repeat: Infinity,
+              repeatType: "mirror",
+              ease: "linear",
+              duration: 10,
             }}
           >
             {star && ""}
-          </div>
+          </motion.div>
         ))}
       </div>
       <motion.div className="text-center lg:text-8xl md:text-7xl text-4xl text-primary-text">

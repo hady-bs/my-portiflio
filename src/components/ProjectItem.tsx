@@ -1,5 +1,5 @@
 import type { Project } from "../types/types";
-
+import { motion } from "framer-motion";
 export default function ProjectItem({
   item,
   itemIndex,
@@ -8,9 +8,12 @@ export default function ProjectItem({
   itemIndex: number;
 }) {
   return (
-    <div
+    <motion.div
       key={itemIndex}
       className="text-primary-text border-2 border-secondry-text p-4 rounded-xl  flex-col flex gap-2"
+      initial={{ opacity: 0, scale: 0.8 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ type: "spring", stiffness: 100, damping: 20, duration: 1 }}
     >
       <div className="bg-white aspect-video overflow-hidden rounded-xl">
         {item.img ? (
@@ -44,6 +47,6 @@ export default function ProjectItem({
       >
         view
       </a>
-    </div>
+    </motion.div>
   );
 }

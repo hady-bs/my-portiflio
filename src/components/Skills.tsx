@@ -9,7 +9,7 @@ export default function Skills({ data }: { data: Skill[] }) {
       <div className="sticky top-0 md:gap-10 gap-5 w-full lg:grid-cols-5  grid-cols-2 grid">
         {data?.map((item, index) => (
           <motion.div
-            key={index}
+            key={index * Math.random()}
             whileInView={{ translateX: 0, opacity: 1 }}
             initial={{
               translateX: index % 2 == 0 ? "-100%" : "100%",
@@ -27,7 +27,6 @@ export default function Skills({ data }: { data: Skill[] }) {
               }}
               initial={{ width: "0%" }}
               whileInView={{ width: item.rank }}
-              viewport={{ once: true }}
               className="progress absolute bg-white h-full left-0"
             ></motion.div>
           </motion.div>

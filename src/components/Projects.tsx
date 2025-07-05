@@ -10,7 +10,11 @@ export default function Projects({ data }: { data: Project[] }) {
       </div>
       <div className=" grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 md:gap-10 gap-5">
         {data?.map((item, itemIndex) => (
-          <ProjectItem item={item} itemIndex={itemIndex} key={itemIndex} />
+          <ProjectItem
+            item={item}
+            itemIndex={itemIndex}
+            key={itemIndex * Math.random()}
+          />
         ))}
       </div>
     </div>

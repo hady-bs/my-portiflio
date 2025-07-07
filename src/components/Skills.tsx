@@ -22,9 +22,9 @@ export default function Skills({ data }: { data: Skill[] }) {
             }}
             transition={{ duration: 1 }}
             viewport={{ once: true }}
-            className="md:w-full overflow-hidden relative w-[90%] mx-auto py-2 rounded-full flex items-center justify-center  bg-accent-color text-primary"
+            className="shadow-[0px_0px_10px_white] md:w-full overflow-hidden relative w-[90%] mx-auto py-2 rounded-full flex items-center justify-center  bg-white text-primary"
           >
-            <div className="relative z-[100]">{item.name}</div>
+            <div className="relative z-[100] text-white">{item.name}</div>
             <motion.div
               transition={{
                 delay: (index + 1) * 0.01,
@@ -33,7 +33,7 @@ export default function Skills({ data }: { data: Skill[] }) {
               }}
               initial={{ width: "0%" }}
               whileInView={{ width: item.rank }}
-              className="progress absolute bg-white h-full left-0"
+              className="progress absolute bg-aura h-full left-0"
             ></motion.div>
           </motion.div>
         ))}

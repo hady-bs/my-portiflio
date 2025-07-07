@@ -10,7 +10,7 @@ export default function ProjectItem({
   return (
     <motion.div
       key={itemIndex}
-      className="text-primary-text border-2 border-secondry-text p-4 rounded-xl  flex-col flex gap-2"
+      className="text-primary-text border-2 border-aura p-4 rounded-xl  flex-col flex min-h-[450px] justify-between"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ type: "spring", stiffness: 100, damping: 20, duration: 1 }}
@@ -29,7 +29,7 @@ export default function ProjectItem({
           </div>
         )}
       </div>
-      <div className="text-2xl text-center text-white">{item.name}</div>
+      <div className="text-2xl text-center text-aura">{item.name}</div>
       <div className="px-1">{item.description}</div>
       <div className="flex flex-row flex-wrap gap-1">
         {item?.languages?.map((item2, item2Index) => (
@@ -41,13 +41,15 @@ export default function ProjectItem({
           </div>
         ))}
       </div>
-      <a
-        href={item.link}
-        className="text-primary-text text-end"
-        target="_blank"
-      >
-        view
-      </a>
+      <div className="flex flex-row justify-end">
+        <a
+          href={item.link}
+          className="text-primary-text font-bold px-5 py-1 rounded-full bg-aura w-fit duration-300 hover:translate-y-[-2px] hover:shadow-[0px_0px_10px_var(--color-aura)]"
+          target="_blank"
+        >
+          view
+        </a>
+      </div>
     </motion.div>
   );
 }

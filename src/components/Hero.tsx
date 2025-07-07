@@ -5,7 +5,7 @@ export default function Hero() {
     return [...Array(100)].map((star: undefined, starIndex: number) => (
       <motion.div
         key={starIndex}
-        className="absolute w-[2px] aspect-square  rotate-45 bg-accent-color animate-pulse shadow-[0px_0px_1px_var(--color-white)]"
+        className="absolute w-[2px] aspect-square  rotate-45 bg-white animate-pulse shadow-[0px_0px_1px_var(--color-aura)]"
         initial={{
           left: Math.random() * 100 + "%",
           top: Math.random() * 100 + "%",
@@ -36,7 +36,7 @@ export default function Hero() {
             ease: "linear",
             repeat: Infinity,
           }}
-          className=" relative z-[100] mx-auto md:w-64 w-32 aspect-square bg-gradient-to-b from-primary via-gray-500 to-secondry-text rounded-full shadow-[0px_2px_100px_var(--color-accent-color)] before:content-[''] before:absolute before:w-2 before:aspect-square before:rounded-full before:bg-gradient-to-l before:from-white via-50% before:to-primary before:shadow-[0px_0px_10px_white,0px_0px_1px_white]  before:right-0 before:top-full"
+          className=" relative z-[100] mx-auto md:w-64 w-32 aspect-square bg-gradient-to-b from-aura via-gray-500 to-secondry-text rounded-full shadow-[0px_2px_100px_var(--color-aura)] before:content-[''] before:absolute before:w-2 before:aspect-square before:rounded-full before:bg-gradient-to-l before:from-white via-50% before:to-aura before:shadow-[0px_0px_10px_var(--color-aura),0px_0px_1px_var(--color-aura)]  before:right-0 before:top-full"
         ></motion.div>
         {stars}
       </div>
@@ -45,7 +45,7 @@ export default function Hero() {
           <motion.span
             key={letterIndex}
             initial={{ textShadow: "0" }}
-            animate={{ textShadow: "0px 0px 10px white" }}
+            animate={{ textShadow: "0px 0px 20px var(--color-aura)" }}
             transition={{
               duration: 1,
               delay: 0.05 * (letterIndex + 1),
@@ -58,7 +58,7 @@ export default function Hero() {
           </motion.span>
         ))}
       </motion.div>
-      <div className="text-3xl text-secondry-text text-center">
+      <div className="text-3xl text-aura text-center">
         {"front-end developer".split("").map((letter, letterIndex) => (
           <motion.span
             key={letterIndex}

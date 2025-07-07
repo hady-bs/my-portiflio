@@ -26,3 +26,6 @@ body {
   scrollbar-width: thin; /* Options: auto | thin | none */
   scrollbar-color: white transparent;
 }
+.icon {
+  @apply text-aura text-3xl;
+}

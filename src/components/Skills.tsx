@@ -34,6 +34,7 @@ export default function Skills({ data }: { data: Skill[] }) {
               initial={{ width: "0%" }}
               whileInView={{ width: item.rank }}
               className="progress absolute bg-aura h-full left-0"
+              viewport={{ once: true }}
             ></motion.div>
           </motion.div>
         ))}

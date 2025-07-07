@@ -13,6 +13,7 @@ export default function OtherSkills({ data }: { data: string[] }) {
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: (itemIndex + 1) * 0.09 }}
+            viewport={{ once: true }}
           >
             {item}
           </motion.div>

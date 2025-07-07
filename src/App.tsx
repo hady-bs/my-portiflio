@@ -8,6 +8,7 @@ const Languages = lazy(() => import("./components/languages"));
 const OtherSkills = lazy(() => import("./components/OtherSkills"));
 const Projects = lazy(() => import("./components/Projects"));
 const Skills = lazy(() => import("./components/Skills"));
+const ContactMe = lazy(() => import("./components/ContactMe"));
 
 function App() {
   const {
@@ -65,6 +66,7 @@ function App() {
             <Education data={data.record.Education} />
             <Languages data={data.record.languages} />
           </div>
+          <ContactMe />
         </Suspense>
       </div>
     );

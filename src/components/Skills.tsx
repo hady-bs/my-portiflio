@@ -12,16 +12,22 @@ export default function Skills({ data }: { data: Skill[] }) {
             key={index * Math.random()}
             whileInView={{ translateX: 0, opacity: 1 }}
             initial={{
-              translateX: index % 2 == 0 ? "-100%" : "100%",
+              translateX:
+                window.innerWidth < 800
+                  ? index % 2 == 0
+                    ? "-100%"
+                    : "100%"
+                  : 0,
               opacity: 0,
             }}
             transition={{ duration: 1 }}
+            viewport={{ once: true }}
             className="md:w-full overflow-hidden relative w-[90%] mx-auto py-2 rounded-full flex items-center justify-center  bg-accent-color text-primary"
           >
             <div className="relative z-[100]">{item.name}</div>
             <motion.div
               transition={{
-                delay: 1 + index * 0.01,
+                delay: (index + 1) * 0.01,
                 duration: 0.5,
                 type: "spring",
               }}

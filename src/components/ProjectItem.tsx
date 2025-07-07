@@ -14,6 +14,7 @@ export default function ProjectItem({
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       transition={{ type: "spring", stiffness: 100, damping: 20, duration: 1 }}
+      viewport={{ once: true }}
     >
       <div className="bg-white aspect-video overflow-hidden rounded-xl">
         {item.img ? (

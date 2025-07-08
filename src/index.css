@@ -14,7 +14,7 @@
   --color-primary-text: #e0e0e0;
   --color-secondry-text: #b0b0b0;
   --color-accent-color: #888888;
-  --color-aura: #e93e9e;
+  --color-aura: var(--color-red-500);
 }
 body {
   @apply bg-primary;

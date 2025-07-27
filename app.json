@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "ae3532ce-a1bd-4699-99d4-38240c649597"
+      }
+    },
+    "android": {
+      "package": "com.hady_bs.podtfolio"
+    }
+  }
+}

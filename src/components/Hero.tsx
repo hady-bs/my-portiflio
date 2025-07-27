@@ -26,7 +26,7 @@ export default function Hero() {
     ));
   }, []);
   return (
-    <div className="flex flex-col justify-center gap-24 py-32 sticky top-0 overflow-hidden">
+    <div className="flex flex-col justify-center gap-16 py-32 sticky top-0 overflow-hidden">
       <div className="">
         <motion.div
           initial={{ rotate: 0 }}

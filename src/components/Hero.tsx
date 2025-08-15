@@ -26,17 +26,18 @@ export default function Hero() {
     ));
   }, []);
   return (
-    <div className="flex flex-col justify-center gap-24 py-32 sticky top-0 overflow-hidden">
+    <div className="flex flex-col justify-evenly h-screen   sticky top-0 overflow-hidden">
       <div className="">
         <motion.div
-          initial={{ rotate: 0 }}
-          animate={{ rotate: 360 }}
+          initial={{ rotate: 0, scale: 1 }}
+          animate={{ rotate: 360, scale: 1.2 }}
           transition={{
             duration: 10,
             ease: "linear",
             repeat: Infinity,
+            repeatType: "mirror",
           }}
-          className=" relative z-[100] mx-auto md:w-64 w-32 aspect-square bg-gradient-to-b from-aura via-gray-500 to-secondry-text rounded-full shadow-[0px_2px_100px_var(--color-aura)] before:content-[''] before:absolute before:w-2 before:aspect-square before:rounded-full before:bg-gradient-to-l before:from-white via-50% before:to-aura before:shadow-[0px_0px_10px_var(--color-aura),0px_0px_1px_var(--color-aura)]  before:right-0 before:top-full"
+          className=" relative z-[100] mx-auto md:w-64 w-32 aspect-square bg-gradient-to-b from-aura via-gray-500 to-secondry-text rounded-full shadow-[0px_2px_100px_var(--color-aura)] before:content-[''] before:absolute before:w-2 before:aspect-square before:rounded-full before:bg-gradient-to-l before:from-white via-50% before:to-aura before:shadow-[0px_0px_10px_var(--color-aura),0px_0px_1px_var(--color-aura)]  before:right-0 before:top-11/12"
         ></motion.div>
         {stars}
       </div>
@@ -45,7 +46,8 @@ export default function Hero() {
           <motion.span
             key={letterIndex}
             initial={{ textShadow: "0" }}
-            animate={{ textShadow: "0px 0px 20px var(--color-aura)" }}
+            whileInView={{ color: "var(--color-aura)" }}
+            animate={{ textShadow: "0px 0px 10px white" }}
             transition={{
               duration: 1,
               delay: 0.05 * (letterIndex + 1),

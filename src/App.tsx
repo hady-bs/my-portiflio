@@ -66,7 +66,7 @@ function App() {
             <Education data={data.record.Education} />
             <Languages data={data.record.languages} />
           </div>
-          <ContactMe />
+          {/* <ContactMe /> */}
         </Suspense>
       </div>
     );

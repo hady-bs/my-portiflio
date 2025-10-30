@@ -48,6 +48,7 @@ function App() {
   if (data)
     return (
       <div className="flex flex-col container mx-auto ">
+        <meta name={"keywords"} content={data.toString()} />
         <Hero />
 
         <Suspense
@@ -59,7 +60,6 @@ function App() {
             </div>
           }
         >
-          <meta name={"keywords"} content={data.toString()} />
           <Projects data={data.record.projects} />
           <Skills data={data.record.skills} />
           <OtherSkills data={data.record.otherSkills} />

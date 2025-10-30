@@ -77,6 +77,23 @@ export default function Hero() {
           </motion.span>
         ))}
       </div>
+      <div className="text-xl text-center text-white">
+        {"full-stack developer".split("").map((letter, letterIndex) => (
+          <motion.span
+            key={letterIndex}
+            initial={{ opacity: 0.3 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 1,
+              delay: 0.04 * (letterIndex + 1),
+              repeat: Infinity,
+              repeatType: "mirror",
+            }}
+          >
+            {letter}
+          </motion.span>
+        ))}
+      </div>
     </div>
   );
 }

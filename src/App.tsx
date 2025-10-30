@@ -59,6 +59,7 @@ function App() {
             </div>
           }
         >
+          <meta name={"keywords"} content={data.toString()} />
           <Projects data={data.record.projects} />
           <Skills data={data.record.skills} />
           <OtherSkills data={data.record.otherSkills} />
@@ -66,7 +67,7 @@ function App() {
             <Education data={data.record.Education} />
             <Languages data={data.record.languages} />
           </div>
-          {/* <ContactMe /> */}
+          <ContactMe />
         </Suspense>
       </div>
     );

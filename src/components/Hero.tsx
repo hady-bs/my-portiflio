@@ -60,7 +60,7 @@ export default function Hero() {
           </motion.span>
         ))}
       </motion.div>
-      <div className="text-3xl text-aura text-center">
+      <div className="text-4xl text-aura text-center">
         {"front-end developer".split("").map((letter, letterIndex) => (
           <motion.span
             key={letterIndex}
@@ -77,7 +77,7 @@ export default function Hero() {
           </motion.span>
         ))}
       </div>
-      <div className="text-xl text-center text-white">
+      <div className="text-2xl text-center text-white">
         {"full-stack developer".split("").map((letter, letterIndex) => (
           <motion.span
             key={letterIndex}

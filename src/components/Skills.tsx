@@ -6,7 +6,7 @@ export default function Skills({ data }: { data: Skill[] }) {
       <div className="text-4xl text-center  text-primary-text animate-pulse">
         My Skills
       </div>
-      <div className="sticky top-0 md:gap-10 gap-5 w-full lg:grid-cols-5  grid-cols-2 grid">
+      <div className="sticky top-0 md:gap-10 gap-5 w-full lg:grid-cols-5  grid-cols-2 grid md:overflow-y-visible  py-10">
         {data?.map((item, index) => (
           <motion.div
             key={index * Math.random()}

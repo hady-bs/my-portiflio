@@ -20,7 +20,7 @@ export default function ProjectItem({
         {item.img ? (
           <img
             src={item.img}
-            className="aspect-video object-cover"
+            className="aspect-video object-contain"
             loading="lazy"
           />
         ) : (

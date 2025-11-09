@@ -99,7 +99,7 @@ export default function Hero() {
       </div>
       <div className="mt-6 flex gap-4 justify-center text-white">
         <Badge icon="🚀">5+ Years Teaching Programming</Badge>
-        <Badge icon="📈">Lighthouse 94 at Fractals</Badge>
+
         <Badge icon="🤝">AI Association Volunteer</Badge>
       </div>
       <p className="mt-4 text-sm text-white text-center">

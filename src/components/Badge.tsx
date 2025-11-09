@@ -8,7 +8,7 @@ function Badge({
   icon: string;
 }) {
   return (
-    <div>
+    <div className="md:text-start text-center">
       {icon}
       {children}
     </div>

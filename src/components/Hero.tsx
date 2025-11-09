@@ -97,7 +97,7 @@ export default function Hero() {
             </motion.span>
           ))}
       </div>
-      <div className="mt-6 flex gap-4 justify-center text-white">
+      <div className="mt-6 flex md:gap-4 justify-center text-white">
         <Badge icon="🚀">
           {"5+ Years Teaching Programming"
             .split("")

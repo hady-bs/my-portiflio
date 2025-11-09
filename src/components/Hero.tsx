@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useMemo, type JSX } from "react";
+import Badge from "./Badge";
 export default function Hero() {
   const stars: JSX.Element[] = useMemo(() => {
     return [...Array(100)].map((star: undefined, starIndex: number) => (
@@ -78,22 +79,33 @@ export default function Hero() {
         ))}
       </div>
       <div className="text-2xl text-center text-white">
-        {"full-stack developer".split("").map((letter, letterIndex) => (
-          <motion.span
-            key={letterIndex}
-            initial={{ opacity: 0.3 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 1,
-              delay: 0.04 * (letterIndex + 1),
-              repeat: Infinity,
-              repeatType: "mirror",
-            }}
-          >
-            {letter}
-          </motion.span>
-        ))}
+        {"full-stack developer & Educator"
+          .split("")
+          .map((letter, letterIndex) => (
+            <motion.span
+              key={letterIndex}
+              initial={{ opacity: 0.3 }}
+              animate={{ opacity: 1 }}
+              transition={{
+                duration: 1,
+                delay: 0.04 * (letterIndex + 1),
+                repeat: Infinity,
+                repeatType: "mirror",
+              }}
+            >
+              {letter}
+            </motion.span>
+          ))}
       </div>
+      <div className="mt-6 flex gap-4 justify-center text-white">
+        <Badge icon="🚀">5+ Years Teaching Programming</Badge>
+        <Badge icon="📈">Lighthouse 94 at Fractals</Badge>
+        <Badge icon="🤝">AI Association Volunteer</Badge>
+      </div>
+      <p className="mt-4 text-sm text-white text-center">
+        Building production apps with React/next by day. Teaching 500+ students
+        to build production apps by night.
+      </p>
     </div>
   );
 }

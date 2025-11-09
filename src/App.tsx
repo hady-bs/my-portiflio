@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import useGetData from "./hooks/useGetData";
 import type PortfolioData from "./types/types";
+import Experience from "./components/Experience";
 
 const Education = lazy(() => import("./components/Education"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -60,6 +61,7 @@ function App() {
             </div>
           }
         >
+          <Experience data={data.record.experience} />
           <Projects data={data.record.projects} />
           <Skills data={data.record.skills} />
           <OtherSkills data={data.record.otherSkills} />

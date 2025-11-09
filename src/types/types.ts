@@ -21,7 +21,12 @@ export interface Project {
   description: string;
   link: string;
 }
-
+export interface experience {
+  company: string;
+  date: string;
+  done: true;
+  details: string[];
+}
 export default interface PortfolioData {
   record: {
     skills: Skill[];
@@ -29,5 +34,6 @@ export default interface PortfolioData {
     languages: Language[];
     Education: EducationItem[];
     projects: Project[];
+    experience: experience[];
   };
 }

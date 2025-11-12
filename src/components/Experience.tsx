@@ -26,7 +26,7 @@ function Experience({ data }: ExperienceProps) {
                 <div className="absolute left-6 md:left-8 top-2 w-4 h-4 bg-aura rounded-full border-4 border-white shadow-lg group-hover:scale-125 transition-transform z-10" />
 
                 {/* Card */}
-                <div className="ml-12 md:ml-16 flex-1">
+                <div className="ml-0 md:ml-16 flex-1">
                   <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 border border-gray-100 group-hover:border-purple-200">
                     {/* Company & Date */}
                     <div className="flex flex-wrap items-start justify-between gap-4 mb-4">
@@ -53,7 +53,7 @@ function Experience({ data }: ExperienceProps) {
                           className="flex items-start text-gray-700 group-hover:text-gray-900 transition-colors"
                         >
                           <svg
-                            className="w-5 h-5 text-aura mr-3 mt-0.5 flex-shrink-0"
+                            className="w-5 h-5 text-aura md:mr-3 md:mt-0.5 -translate-x-1/2 flex-shrink-0"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"

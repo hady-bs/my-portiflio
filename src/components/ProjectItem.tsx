@@ -29,7 +29,9 @@ export default function ProjectItem({
           </div>
         )}
       </div>
-      <div className="text-2xl text-center text-aura">{item.name}</div>
+      <div className="text-2xl text-center text-aura font-bold">
+        {item.name}
+      </div>
       <div className="px-1">{item.description}</div>
       <div className="flex flex-row flex-wrap gap-1">
         {item?.languages?.map((item2, item2Index) => (

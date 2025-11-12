@@ -27,7 +27,7 @@ export default function Hero() {
           initial={{ rotate: 0, scale: 1 }}
           animate={{ rotate: 360, scale: 1.2 }}
           transition={{
-            duration: 10,
+            duration: 1000,
             ease: "linear",
             repeat: Infinity,
             repeatType: "mirror",
@@ -44,7 +44,7 @@ export default function Hero() {
             whileInView={{ color: "var(--color-aura)" }}
             animate={{ textShadow: "0px 0px 10px white" }}
             transition={{
-              duration: 1,
+              duration: 2,
               delay: 0.05 * (letterIndex + 1),
               repeat: Infinity,
               repeatType: "mirror",

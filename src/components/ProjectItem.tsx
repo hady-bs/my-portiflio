@@ -44,7 +44,7 @@ export default function ProjectItem({
       <div className="flex flex-row justify-end">
         <a
           href={item.link}
-          className="text-primary-text font-bold px-5 py-1 rounded-full bg-aura w-fit duration-300 hover:translate-y-[-2px] hover:shadow-[0px_0px_10px_var(--color-aura)]"
+          className="text-black font-bold px-5 py-1 rounded-full bg-aura w-fit duration-300 hover:translate-y-[-2px] hover:shadow-[0px_0px_10px_var(--color-aura)]"
           target="_blank"
         >
           view

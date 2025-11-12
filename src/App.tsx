@@ -1,7 +1,9 @@
 import { lazy, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 import useGetData from "./hooks/useGetData";
 import type PortfolioData from "./types/types";
 import Experience from "./components/Experience";
+import NotFound from "./components/NotFound";
 
 const Education = lazy(() => import("./components/Education"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -26,12 +28,9 @@ function App() {
     return (
       <div className="relative h-[100dvh] w-full ">
         <div className="loader flex items-center justify-center h-full gap-3">
-          {[...Array(3)].map((_, index) => (
-            <div
-              className="w-10 aspect-square rounded-full bg-gradient-to-r from-primary via-gray-500 to-secondry-text animate-spin"
-              key={index}
-            ></div>
-          ))}
+          <div className="md:text-4xl text-2xl animate-pulse text-white">
+            loading...
+          </div>
         </div>
       </div>
     );
@@ -48,30 +47,38 @@ function App() {
 
   if (data)
     return (
-      <div className="flex flex-col container mx-auto ">
-        <meta name={"keywords"} content={data.toString()} />
-        <Hero />
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <div className="flex flex-col container mx-auto ">
+              <meta name={"keywords"} content={data.toString()} />
+              <Hero />
 
-        <Suspense
-          fallback={
-            <div className="flex justify-center items-center h-screen">
-              <div className="loader text-3xl text-white">
-                loading <span className="animate-pulse">...</span>
-              </div>
+              <Suspense
+                fallback={
+                  <div className="flex justify-center items-center h-screen">
+                    <div className="loader text-3xl text-white">
+                      loading <span className="animate-pulse">...</span>
+                    </div>
+                  </div>
+                }
+              >
+                <Experience data={data.record.experience} />
+                <Projects data={data.record.projects} />
+                <Skills data={data.record.skills} />
+                <OtherSkills data={data.record.otherSkills} />
+                <div className="grid md:grid-cols-2 ">
+                  <Education data={data.record.Education} />
+                  <Languages data={data.record.languages} />
+                </div>
+                <ContactMe />
+              </Suspense>
             </div>
           }
-        >
-          <Experience data={data.record.experience} />
-          <Projects data={data.record.projects} />
-          <Skills data={data.record.skills} />
-          <OtherSkills data={data.record.otherSkills} />
-          <div className="grid md:grid-cols-2 ">
-            <Education data={data.record.Education} />
-            <Languages data={data.record.languages} />
-          </div>
-          <ContactMe />
-        </Suspense>
-      </div>
+        />
+        <Route path="*" element={<NotFound />} />
+      </Routes>
     );
 }
 

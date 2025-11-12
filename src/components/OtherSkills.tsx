@@ -9,7 +9,7 @@ export default function OtherSkills({ data }: { data: string[] }) {
         {data?.map((item, itemIndex) => (
           <motion.div
             key={itemIndex}
-            className="px-3 py-2 text-white shadow-[0px_0px_10px_var(--color-aura)] rounded-xl  backdrop-blur-[100px] bg-aura"
+            className="px-3 py-2 text-black shadow-[0px_0px_10px_var(--color-aura)] rounded-xl  backdrop-blur-[100px] bg-aura"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: (itemIndex + 1) * 0.09 }}

@@ -24,7 +24,7 @@ export default function Skills({ data }: { data: Skill[] }) {
             viewport={{ once: true }}
             className="shadow-[0px_0px_10px_white] md:w-full overflow-hidden relative w-[90%] mx-auto py-2 rounded-full flex items-center justify-center  bg-white text-primary"
           >
-            <div className="relative z-[100] text-white">{item.name}</div>
+            <div className="relative z-[100] text-black">{item.name}</div>
             <motion.div
               transition={{
                 delay: (index + 1) * 0.01,

@@ -28,8 +28,9 @@ function App() {
     return (
       <div className="relative h-[100dvh] w-full ">
         <div className="loader flex items-center justify-center h-full gap-3">
-          <div className="md:text-4xl text-2xl animate-pulse text-white">
+          <div className="md:text-4xl text-2xl animate-pulse text-white flex items-center">
             loading...
+            <div className="w-10 h-10   border-x-aura border-x-2 rounded-full  animate-spin"></div>
           </div>
         </div>
       </div>

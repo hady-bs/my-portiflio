@@ -26,9 +26,9 @@ export default function ContactMe() {
   ];
   return (
     <div className=" sticky top-0 bg-primary py-10">
-      <div className="text-4xl text-aura text-center animate-pulse py-10 ">
+      <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-aura  bg-clip-text text-transparent">
         Contact Me
-      </div>
+      </h2>
       <div className="flex flex-row gap-10 justify-center ">
         {links.map((link: link, index: number) => (
           <a

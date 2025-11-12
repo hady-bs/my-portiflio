@@ -15,12 +15,6 @@ export default function Hero() {
           left: Math.random() * 100 + "%",
           top: Math.random() * 100 + "%",
         }}
-        transition={{
-          repeat: Infinity,
-          repeatType: "mirror",
-          ease: "linear",
-          duration: 10,
-        }}
       >
         {star && ""}
       </motion.div>

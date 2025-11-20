@@ -23,6 +23,7 @@ export default function ProjectItem({
             className="aspect-video object-contain"
             loading="lazy"
             decoding="async"
+            alt={item.description}
           />
         ) : (
           <div className="aspect-video bg-white flex items-center justify-center">

@@ -19,7 +19,7 @@ function App() {
     isLoading,
     error,
   }: {
-    data: PortfolioData | undefined;
+    data: PortfolioData["record"] | undefined;
     isLoading: boolean;
     error: Error | null;
   } = useGetData();
@@ -65,13 +65,13 @@ function App() {
                   </div>
                 }
               >
-                <Experience data={data.record.experience} />
-                <Projects data={data.record.projects} />
-                <Skills data={data.record.skills} />
-                <OtherSkills data={data.record.otherSkills} />
+                <Experience data={data.experience} />
+                <Projects data={data.projects} />
+                <Skills data={data.skills} />
+                <OtherSkills data={data.otherSkills} />
                 <div className="grid md:grid-cols-2 ">
-                  <Education data={data.record.Education} />
-                  <Languages data={data.record.languages} />
+                  <Education data={data.Education} />
+                  <Languages data={data.languages} />
                 </div>
                 <ContactMe />
               </Suspense>

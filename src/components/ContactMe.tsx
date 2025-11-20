@@ -32,6 +32,7 @@ export default function ContactMe() {
       <div className="flex flex-row gap-10 justify-center ">
         {links.map((link: link, index: number) => (
           <a
+            aria-description="icon"
             href={link.href}
             key={index}
             className="hover:scale-120 hover:drop-shadow-[0px_0px_10px_var(--color-aura)] duration-300 "

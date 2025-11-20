@@ -48,6 +48,7 @@ export default function ProjectItem({
       </div>
       <div className="flex flex-row justify-end">
         <a
+          aria-description="show project"
           href={item.link}
           className="text-black font-bold px-5 py-1 rounded-full bg-aura w-fit duration-300 hover:translate-y-[-2px] hover:shadow-[0px_0px_10px_var(--color-aura)]"
           target="_blank"

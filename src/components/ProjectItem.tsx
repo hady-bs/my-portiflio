@@ -22,6 +22,7 @@ export default function ProjectItem({
             src={item.img}
             className="aspect-video object-contain"
             loading="lazy"
+            decoding="async"
           />
         ) : (
           <div className="aspect-video bg-white flex items-center justify-center">

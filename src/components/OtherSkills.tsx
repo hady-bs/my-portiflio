@@ -12,7 +12,7 @@ export default function OtherSkills({ data }: { data: string[] }) {
             className="px-3 py-2 text-black shadow-[0px_0px_10px_var(--color-aura)] rounded-xl font-bold  backdrop-blur-[100px] bg-aura"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ delay: (itemIndex + 1) * 0.09 }}
+            transition={{ delay: (itemIndex + 1) * 0.05 }}
             viewport={{ once: true }}
           >
             {item}

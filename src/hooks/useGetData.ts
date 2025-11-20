@@ -3,11 +3,11 @@ import { useQuery } from "@tanstack/react-query";
 import type PortfolioData from "../types/types";
 
 export default function useGetData(): {
-  data: PortfolioData | undefined;
+  data: PortfolioData["record"] | undefined;
   isLoading: boolean;
   error: Error | null;
 } {
-  const { data, isLoading, error } = useQuery<PortfolioData, Error>({
+  const { data, isLoading, error } = useQuery<PortfolioData["record"], Error>({
     queryKey: ["data"],
     queryFn: () => getData(),
   });

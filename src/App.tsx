@@ -65,13 +65,13 @@ function App() {
                   </div>
                 }
               >
-                <Experience data={data.experience} />
-                <Projects data={data.projects} />
-                <Skills data={data.skills} />
-                <OtherSkills data={data.otherSkills} />
+                <Experience data={data.record.experience} />
+                <Projects data={data.record.projects} />
+                <Skills data={data.record.skills} />
+                <OtherSkills data={data.record.otherSkills} />
                 <div className="grid md:grid-cols-2 ">
-                  <Education data={data.Education} />
-                  <Languages data={data.languages} />
+                  <Education data={data.record.Education} />
+                  <Languages data={data.record.languages} />
                 </div>
                 <ContactMe />
               </Suspense>

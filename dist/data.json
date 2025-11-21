@@ -1,0 +1,275 @@
+{
+  "record": {
+    "skills": [
+      {
+        "name": "HTML5",
+        "rank": "100%"
+      },
+      {
+        "name": "CSS3",
+        "rank": "100%"
+      },
+      {
+        "name": "JavaScript (ES6+)",
+        "rank": "90%"
+      },
+      {
+        "name": "React.js",
+        "rank": "90%"
+      },
+      {
+        "name": "TypeScript",
+        "rank": "90%"
+      },
+      {
+        "name": "Angular",
+        "rank": "80%"
+      },
+      {
+        "name": "MySQL & NoSQL",
+        "rank": "90%"
+      },
+      {
+        "name": "Nest.js",
+        "rank": "80%"
+      },
+      {
+        "name": "Express.js",
+        "rank": "90%"
+      },
+      {
+        "name": "Next.js",
+        "rank": "90%"
+      },
+      {
+        "name": "React Native",
+        "rank": "80%"
+      },
+      {
+        "name": "ORM",
+        "rank": "100%"
+      }
+    ],
+    "otherSkills": [
+      "Sequelize",
+      "Prisma",
+      "Zustand",
+      "React Query",
+      "Redux Toolkit",
+      "TailwindCSS",
+      "React Context",
+      "Linux",
+      "DaisyUI",
+      "Bootstrap",
+      "NativeWind",
+      "Reanimated",
+      "Axios",
+      "Figma",
+      "Node.js",
+      "C++",
+      "C#",
+      "Python",
+      "Java"
+    ],
+    "languages": [
+      {
+        "name": "Arabic",
+        "score": "100%"
+      },
+      {
+        "name": "English",
+        "score": "70%"
+      }
+    ],
+    "Education": [
+      {
+        "name": "Bachelor's Degree in Mathematics, University of Sciences, Damascus",
+        "date": "2018-present",
+        "done": false
+      },
+      {
+        "name": "Web Development Training – Al-Mamoun International Institute",
+        "date": "2020",
+        "done": true
+      },
+      {
+        "name": "Prompt Engineering Certificate – accredited program (2024)",
+        "date": "2025",
+        "done": true
+      },
+      {
+        "name": "SoloLearn – multiple programming-language certifications (C++, Python, Java, C#, JavaScript)",
+        "date": "2020-2022",
+        "done": true
+      }
+    ],
+    "experience": [
+      {
+        "company": "Freelance Full-Stack Developer",
+        "date": "2025 – Present",
+        "done": false,
+        "details": [
+          "Developed and delivered custom web applications for various international clients",
+          "Collaborated directly with clients to gather requirements and provide technical solutions",
+          "Built responsive and scalable applications using React, Angular, and Node.js",
+          "Managed complete project lifecycle from conception to deployment and maintenance"
+        ]
+      },
+      {
+        "company": "Front-End Developer – Fractals",
+        "date": "April 2025 – November 2025",
+        "done": true,
+        "details": [
+          "Contributed to modern web application development and collaborated with cross-functional teams",
+          "Improved Lighthouse performance score from 62 to 94",
+          "Built scalable React/Next.js applications with TypeScript and Zustand"
+        ]
+      },
+      {
+        "company": "Angular Developer – Kashlan Team",
+        "date": "January 2025 – March 2025",
+        "done": true,
+        "details": [
+          "Developed and maintained Angular-based web applications",
+          "Implemented responsive UI components and features",
+          "Collaborated with team members on project delivery"
+        ]
+      },
+      {
+        "company": "University Programming Instructor",
+        "date": "2020 – 2025",
+        "done": true,
+        "details": [
+          "Taught programming languages including C++, C#, Java, and Pascal to university students",
+          "Worked with three university teams: SYE, IOM, and Syrian Teachers, fostering collaborative learning environments",
+          "Developed structured learning materials and practical exercises to enhance students' understanding"
+        ]
+      }
+    ],
+    "projects": [
+      {
+        "img": "https://imgs.search.brave.com/uW69YaAgaqKx5MfkDPPS0N0FBfYSVzP34PpKkzkX3lc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTU5/MTA1Ni9wZXhlbHMt/cGhvdG8tMTU5MTA1/Ni5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA ",
+        "name": "blog",
+        "languages": [
+          "html",
+          "css",
+          "js(vanilla)",
+          "jade.js",
+          "bootstrap",
+          "express.js",
+          "Sequelize",
+          "Postgres",
+          "JWT"
+        ],
+        "description": "simple full stack blog",
+        "link": "https://blog-6afv.onrender.com/ "
+      },
+      {
+        "img": "https://reflectart.net/images/svg/logo.svg ",
+        "name": "ReflectArt",
+        "languages": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React.js",
+          "TailwindCSS",
+          "Redux Toolkit",
+          "i18next",
+          "Framer Motion"
+        ],
+        "description": "Real project for art reflection platform",
+        "link": "https://reflectart.net/ "
+      },
+      {
+        "img": "https://www.aceinfoway.com/blog/wp-content/uploads/2020/07/front-end-developer.jpg ",
+        "name": "Info Card",
+        "languages": ["HTML", "CSS", "TailwindCSS"],
+        "description": "Basic info card with responsive design",
+        "link": "https://hady-bs.github.io/task/ "
+      },
+      {
+        "img": "https://fakestoreapi.com/icons/intro.svg ",
+        "name": "simple e-commerce",
+        "languages": [
+          "HTML",
+          "CSS",
+          "JS",
+          "Angular",
+          "Angular material",
+          "api",
+          "localStorage"
+        ],
+        "description": "simple app with fake data you can add favorite and cart and you can deleted",
+        "link": "https://ecommerce-angular-7s6z.onrender.com/ "
+      },
+      {
+        "img": "https://imgs.search.brave.com/uW69YaAgaqKx5MfkDPPS0N0FBfYSVzP34PpKkzkX3lc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTU5/MTA1Ni9wZXhlbHMt/cGhvdG8tMTU5MTA1/Ni5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA ",
+        "name": "blog mobile application",
+        "languages": ["React native", "scure store"],
+        "description": "simple mobile application this is just a repo on github ",
+        "link": "https://blog-6afv.onrender.com/ "
+      },
+      {
+        "img": "https://github.com/hady-bs/blog-mobile-application",
+        "name": "Old Portfolio",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "description": "Responsive portfolio design",
+        "link": "https://hady-bs.github.io/portfolio/ "
+      },
+      {
+        "img": "https://www.incimages.com/uploaded_files/image/1920x1080/getty_514914078_200013332000928076_167571.jpg ",
+        "name": "Todo List App",
+        "languages": ["HTML", "CSS", "JavaScript", "React.js"],
+        "description": "Simple todo application without API",
+        "link": "https://hady-bs.github.io/to-do-list/ "
+      },
+      {
+        "img": "https://images.unsplash.com/photo-1575908524891-b0bdd2b99f90?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80 ",
+        "name": "Landing Page",
+        "languages": ["HTML", "CSS"],
+        "description": "Responsive design without Bootstrap",
+        "link": "https://hady-bs.github.io/template_one/ "
+      },
+      {
+        "img": "https://mathworld.wolfram.com/images/eps-svg/Tic-Tac-Toe_600.svg ",
+        "name": "XO Game",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "description": "Simple game with basic front-end",
+        "link": "https://hady-bs.github.io/XO_Game/ "
+      },
+      {
+        "img": "https://hady-bs.github.io/landpageTwo/img/vecteezy_volunteers-packing-donation-boxes_6901865.jpg ",
+        "name": "Simple Page",
+        "languages": ["HTML", "CSS"],
+        "description": "Responsive design with grid system",
+        "link": "https://hady-bs.github.io/landpageTwo/ "
+      },
+      {
+        "img": "https://hady-bs.github.io/tempBootstrap/imgs/laptop.png ",
+        "name": "Bootstrap Template",
+        "languages": ["HTML", "CSS", "Bootstrap"],
+        "description": "Responsive design with Bootstrap",
+        "link": "https://hady-bs.github.io/tempBootstrap/ "
+      },
+      {
+        "img": "https://cdn1.dotesports.com/wp-content/uploads/2022/07/20145924/candy-crush-saga-header.jpg ",
+        "name": "Candy Crush",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "description": "Computer version of Candy Crush game",
+        "link": "https://candycrush-6lju.onrender.com/ "
+      },
+      {
+        "img": "https://www.aceinfoway.com/blog/wp-content/uploads/2020/07/front-end-developer.jpg ",
+        "name": "First Portfolio Page",
+        "languages": ["HTML", "CSS", "JavaScript"],
+        "description": "My first web development project",
+        "link": "https://hady-bs.github.io/firstPage/ "
+      }
+    ]
+  },
+  "metadata": {
+    "id": "63e65c01ace6f33a22dafab9",
+    "private": true,
+    "createdAt": "2023-02-10T15:00:17.695Z"
+  }
+}

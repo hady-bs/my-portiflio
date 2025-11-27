@@ -3,7 +3,7 @@ import { useMemo, type JSX } from "react";
 import Badge from "./Badge";
 export default function Hero() {
   const stars: JSX.Element[] = useMemo(() => {
-    return [...Array(50)].map((star: undefined, starIndex: number) => (
+    return [...Array(20)].map((star: undefined, starIndex: number) => (
       <motion.div
         key={starIndex}
         className="absolute w-[2px] aspect-square  rotate-45 bg-white animate-pulse shadow-[0px_0px_1px_var(--color-aura)]"

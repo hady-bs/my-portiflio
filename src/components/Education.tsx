@@ -9,7 +9,7 @@ export default function Education({ data }: { data: EducationItem[] }) {
       transition={{ duration: 1 }}
       className="py-10 w-full md:px-10 mx-auto flex flex-col gap-10 sticky top-0 bg-gradient-to-t from-primary from-95% to-transparent backdrop-blur-2xl"
     >
-      <h2 className="text-4xl font-bold text-center mb-5 bg-gradient-to-r from-aura  bg-clip-text text-transparent">
+      <h2 className="text-4xl font-bold text-center mb-1 bg-gradient-to-r from-aura  bg-clip-text text-transparent">
         Education
       </h2>
       <div className="grid md:grid-cols-2 grid-cols-1 mx-auto gap-5">

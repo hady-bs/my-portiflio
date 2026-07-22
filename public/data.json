@@ -165,6 +165,22 @@
         "link": "https://blog-6afv.onrender.com/ "
       },
       {
+        "img": "https://novagroups.net//images/contactImg.png",
+        "name": "Nova Group",
+        "link": "https://novagroups.net/",
+        "languages": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React.js",
+          "TailwindCSS",
+          "zustand",
+          "i18next",
+          "Framer Motion"
+        ],
+        "description": "Real project for nova group company"
+      },
+      {
         "img": "https://reflectart.net/images/svg/logo.svg ",
         "name": "ReflectArt",
         "languages": [

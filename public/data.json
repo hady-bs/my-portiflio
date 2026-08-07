@@ -105,14 +105,11 @@
     ],
     "experience": [
       {
-        "company": "Freelance Full-Stack Developer",
+        "company": "Freelance Front-end Developer",
         "date": "2025 – Present",
         "done": false,
         "details": [
-          "Developed and delivered custom web applications for various international clients",
-          "Collaborated directly with clients to gather requirements and provide technical solutions",
-          "Built responsive and scalable applications using React, Angular, and Node.js",
-          "Managed complete project lifecycle from conception to deployment and maintenance"
+          "Built responsive web apps for global clients using React, Angular, and Next.js. Integrated front-end UIs with REST APIs for seamless full-stack functionality. Managed the complete front-end lifecycle from development to deployment and maintenance."
         ]
       },
       {

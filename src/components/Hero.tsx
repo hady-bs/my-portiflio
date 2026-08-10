@@ -63,21 +63,19 @@ export default function Hero() {
         ))}
       </div>
       <div className="text-2xl text-center text-white">
-        {"full-stack developer & Educator"
-          .split("")
-          .map((letter, letterIndex) => (
-            <motion.span
-              key={letterIndex}
-              initial={{ opacity: 0.3 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                duration: 0.5,
-                delay: 0.04 * (letterIndex + 1),
-              }}
-            >
-              {letter}
-            </motion.span>
-          ))}
+        {"Educator".split("").map((letter, letterIndex) => (
+          <motion.span
+            key={letterIndex}
+            initial={{ opacity: 0.3 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.5,
+              delay: 0.04 * (letterIndex + 1),
+            }}
+          >
+            {letter}
+          </motion.span>
+        ))}
       </div>
       <div className="mt-6 flex md:gap-4 justify-center text-white">
         <Badge icon="🚀">

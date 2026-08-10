@@ -145,23 +145,6 @@
     ],
     "projects": [
       {
-        "img": "https://imgs.search.brave.com/uW69YaAgaqKx5MfkDPPS0N0FBfYSVzP34PpKkzkX3lc/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMTU5/MTA1Ni9wZXhlbHMt/cGhvdG8tMTU5MTA1/Ni5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA ",
-        "name": "blog",
-        "languages": [
-          "html",
-          "css",
-          "js(vanilla)",
-          "jade.js",
-          "bootstrap",
-          "express.js",
-          "Sequelize",
-          "Postgres",
-          "JWT"
-        ],
-        "description": "simple full stack blog",
-        "link": "https://blog-6afv.onrender.com/ "
-      },
-      {
         "img": "https://novagroups.net//images/contactImg.png",
         "name": "Nova Group",
         "link": "https://novagroups.net/",

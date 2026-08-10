@@ -26,33 +26,15 @@
         "rank": "80%"
       },
       {
-        "name": "MySQL & NoSQL",
-        "rank": "90%"
-      },
-      {
-        "name": "Nest.js",
-        "rank": "80%"
-      },
-      {
-        "name": "Express.js",
-        "rank": "90%"
-      },
-      {
         "name": "Next.js",
         "rank": "90%"
       },
       {
         "name": "React Native",
         "rank": "80%"
-      },
-      {
-        "name": "ORM",
-        "rank": "100%"
       }
     ],
     "otherSkills": [
-      "Sequelize",
-      "Prisma",
       "Zustand",
       "React Query",
       "Redux Toolkit",

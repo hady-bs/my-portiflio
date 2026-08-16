@@ -65,9 +65,9 @@
     ],
     "Education": [
       {
-        "name": "Bachelor's Degree in Mathematics, University of Sciences, Damascus",
-        "date": "2018-present",
-        "done": false
+        "name": "Bachelor's Degree in Mathematics, University of Sciences, Damascus(Incomplete)",
+        "date": "2018-2025",
+        "done": true
       },
       {
         "name": "Web Development Training – Al-Mamoun International Institute",
@@ -115,7 +115,7 @@
         ]
       },
       {
-        "company": "University Programming Instructor",
+        "company": "Programming Instructor",
         "date": "2020 – 2025",
         "done": true,
         "details": [

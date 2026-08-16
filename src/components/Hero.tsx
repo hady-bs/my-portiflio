@@ -63,7 +63,7 @@ export default function Hero() {
         ))}
       </div>
       <div className="text-2xl text-center text-white">
-        {"Educator".split("").map((letter, letterIndex) => (
+        {"Programming Instructor".split("").map((letter, letterIndex) => (
           <motion.span
             key={letterIndex}
             initial={{ opacity: 0.3 }}

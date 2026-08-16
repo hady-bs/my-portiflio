@@ -127,6 +127,22 @@
     ],
     "projects": [
       {
+        "img": "https://expert-move.com/assets/logo-BhrSK2_Q.svg",
+        "name": "expert move",
+        "link": "https://expert-move.com/",
+        "languages": [
+          "HTML5",
+          "CSS3",
+          "JavaScript",
+          "React.js",
+          "TailwindCSS",
+          "i18next",
+          "Framer Motion",
+          "Gsap"
+        ],
+        "description": "Real project for expert move company"
+      },
+      {
         "img": "https://novagroups.net//images/contactImg.png",
         "name": "Nova Group",
         "link": "https://novagroups.net/",

@@ -174,13 +174,7 @@
         "description": "Real project for art reflection platform",
         "link": "https://reflectart.net/ "
       },
-      {
-        "img": "https://www.aceinfoway.com/blog/wp-content/uploads/2020/07/front-end-developer.jpg ",
-        "name": "Info Card",
-        "languages": ["HTML", "CSS", "TailwindCSS"],
-        "description": "Basic info card with responsive design",
-        "link": "https://hady-bs.github.io/task/ "
-      },
+
       {
         "img": "https://fakestoreapi.com/icons/intro.svg ",
         "name": "simple e-commerce",
@@ -203,13 +197,7 @@
         "description": "simple mobile application this is just a repo on github ",
         "link": "https://blog-mobile-application.onrender.com/"
       },
-      {
-        "img": "https://github.com/hady-bs/blog-mobile-application",
-        "name": "Old Portfolio",
-        "languages": ["HTML", "CSS", "JavaScript"],
-        "description": "Responsive portfolio design",
-        "link": "https://hady-bs.github.io/portfolio/ "
-      },
+
       {
         "img": "https://www.incimages.com/uploaded_files/image/1920x1080/getty_514914078_200013332000928076_167571.jpg ",
         "name": "Todo List App",
@@ -238,26 +226,13 @@
         "description": "Responsive design with grid system",
         "link": "https://hady-bs.github.io/landpageTwo/ "
       },
-      {
-        "img": "https://hady-bs.github.io/tempBootstrap/imgs/laptop.png ",
-        "name": "Bootstrap Template",
-        "languages": ["HTML", "CSS", "Bootstrap"],
-        "description": "Responsive design with Bootstrap",
-        "link": "https://hady-bs.github.io/tempBootstrap/ "
-      },
+
       {
         "img": "https://cdn1.dotesports.com/wp-content/uploads/2022/07/20145924/candy-crush-saga-header.jpg ",
         "name": "Candy Crush",
         "languages": ["HTML", "CSS", "JavaScript"],
         "description": "Computer version of Candy Crush game",
         "link": "https://candycrush-6lju.onrender.com/ "
-      },
-      {
-        "img": "https://www.aceinfoway.com/blog/wp-content/uploads/2020/07/front-end-developer.jpg ",
-        "name": "First Portfolio Page",
-        "languages": ["HTML", "CSS", "JavaScript"],
-        "description": "My first web development project",
-        "link": "https://hady-bs.github.io/firstPage/ "
       }
     ]
   },

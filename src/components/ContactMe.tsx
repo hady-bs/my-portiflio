@@ -4,6 +4,7 @@ import {
   FaCodepen,
   FaFacebookSquare,
   FaWhatsapp,
+  FaLinkedin,
 } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 type link = { href: string; icon: JSX.Element };
@@ -22,6 +23,10 @@ export default function ContactMe() {
     {
       href: "https://api.whatsapp.com/send?phone=963930085744",
       icon: <FaWhatsapp className="icon" />,
+    },
+    {
+      href: "https://www.linkedin.com/in/abd-alhady-alboshy-863669424?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+      icon: <FaLinkedin className="icon" />,
     },
   ];
   return (

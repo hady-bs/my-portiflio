@@ -26,7 +26,7 @@ function App() {
 
   if (isLoading)
     return (
-      <div className="relative h-[100dvh] w-full ">
+      <div className="relative h-screen w-full ">
         <div className="loader flex items-center justify-center h-full gap-3">
           <div className="md:text-4xl text-2xl animate-pulse text-white flex items-center">
             <div className="w-10 h-10  rounded-full  border-x-aura border-y- border-2   animate-spin"></div>
@@ -55,25 +55,25 @@ function App() {
               <meta name={"keywords"} content={data.toString()} />
               <Hero />
 
-              {/* <Suspense
+              <Suspense
                 fallback={
-                  <div className="flex justify-center items-center h-screen">
+                  <div className="flex bg-black justify-center items-center h-screen">
                     <div className="loader text-3xl text-white">
                       <div className="w-10 h-10  rounded-full  border-x-aura border-y- border-2   animate-spin"></div>
                     </div>
                   </div>
                 }
-              > */}
-              <Experience data={data.experience} />
-              <Projects data={data.projects} />
-              <Skills data={data.skills} />
-              <OtherSkills data={data.otherSkills} />
-              <div className="grid md:grid-cols-2 ">
-                <Education data={data.Education} />
-                <Languages data={data.languages} />
-              </div>
-              <ContactMe />
-              {/* </Suspense> */}
+              >
+                <Experience data={data.experience} />
+                <Projects data={data.projects} />
+                <Skills data={data.skills} />
+                <OtherSkills data={data.otherSkills} />
+                <div className="grid md:grid-cols-2 ">
+                  <Education data={data.Education} />
+                  <Languages data={data.languages} />
+                </div>
+                <ContactMe />
+              </Suspense>
             </div>
           }
         />

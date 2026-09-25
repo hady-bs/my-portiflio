@@ -29,8 +29,7 @@ function App() {
       <div className="relative h-[100dvh] w-full ">
         <div className="loader flex items-center justify-center h-full gap-3">
           <div className="md:text-4xl text-2xl animate-pulse text-white flex items-center">
-            loading...
-            <div className="w-10 h-10   border-x-aura border-x-2 rounded-full  animate-spin"></div>
+            <div className="w-10 h-10  rounded-full  border-x-aura border-y- border-2   animate-spin"></div>
           </div>
         </div>
       </div>
@@ -60,7 +59,7 @@ function App() {
                 fallback={
                   <div className="flex justify-center items-center h-screen">
                     <div className="loader text-3xl text-white">
-                      loading <span className="animate-pulse">...</span>
+                      <div className="w-10 h-10  rounded-full  border-x-aura border-y- border-2   animate-spin"></div>
                     </div>
                   </div>
                 }

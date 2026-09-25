@@ -55,7 +55,7 @@ function App() {
               <meta name={"keywords"} content={data.toString()} />
               <Hero />
 
-              <Suspense
+              {/* <Suspense
                 fallback={
                   <div className="flex justify-center items-center h-screen">
                     <div className="loader text-3xl text-white">
@@ -63,17 +63,17 @@ function App() {
                     </div>
                   </div>
                 }
-              >
-                <Experience data={data.experience} />
-                <Projects data={data.projects} />
-                <Skills data={data.skills} />
-                <OtherSkills data={data.otherSkills} />
-                <div className="grid md:grid-cols-2 ">
-                  <Education data={data.Education} />
-                  <Languages data={data.languages} />
-                </div>
-                <ContactMe />
-              </Suspense>
+              > */}
+              <Experience data={data.experience} />
+              <Projects data={data.projects} />
+              <Skills data={data.skills} />
+              <OtherSkills data={data.otherSkills} />
+              <div className="grid md:grid-cols-2 ">
+                <Education data={data.Education} />
+                <Languages data={data.languages} />
+              </div>
+              <ContactMe />
+              {/* </Suspense> */}
             </div>
           }
         />

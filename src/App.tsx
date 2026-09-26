@@ -1,9 +1,10 @@
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useMemo, type JSX } from "react";
 import { Routes, Route } from "react-router-dom";
 import useGetData from "./hooks/useGetData";
 import type PortfolioData from "./types/types";
 import Experience from "./components/Experience";
 import NotFound from "./components/NotFound";
+import { motion } from "framer-motion";
 
 const Education = lazy(() => import("./components/Education"));
 const Hero = lazy(() => import("./components/Hero"));
@@ -23,12 +24,26 @@ function App() {
     isLoading: boolean;
     error: Error | null;
   } = useGetData();
-
+  const stars: JSX.Element[] = useMemo(() => {
+    return [...Array(20)].map((star: undefined, starIndex: number) => (
+      <motion.div
+        key={starIndex}
+        className="absolute w-[2px] aspect-square  rotate-45 bg-white animate-pulse shadow-[0px_0px_1px_var(--color-aura)]"
+        initial={{
+          left: Math.random() * 100 + "%",
+          top: Math.random() * 100 + "%",
+        }}
+      >
+        {star && ""}
+      </motion.div>
+    ));
+  }, []);
   if (isLoading)
     return (
       <div className="relative h-screen w-full ">
         <div className="loader flex items-center justify-center h-full gap-3">
           <div className="md:text-4xl text-2xl animate-pulse text-white flex items-center">
+            {stars}
             <div className="w-10 h-10  rounded-full  border-x-aura border-y- border-2   animate-spin"></div>
           </div>
         </div>

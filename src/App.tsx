@@ -57,10 +57,21 @@ function App() {
 
               <Suspense
                 fallback={
-                  <div className="flex bg-primary justify-center items-center h-screen z-100">
-                    <div className="loader text-3xl text-white">
-                      <div className="w-10 h-10  rounded-full  border-x-aura border-y- border-2   animate-spin"></div>
-                    </div>
+                  <div className="flex flex-col gap-5 py-10 bg-primary justify-center items-center h-screen z-100">
+                    {[...Array(3)].map((item, index) => (
+                      <div
+                        className=" flex-1 flex flex-col gap-5 py-5 ml-12  w-full h-50 bg-gray-600 animate-pulse rounded-3xl"
+                        key={index}
+                      >
+                        <div className="w-6/9 h-5 rounded-full ml-3 animate-pulse bg-gray-400"></div>
+                        {Array.from({ length: 3 }).map((item, index) => (
+                          <div
+                            key={index}
+                            className="w-3/9 h-5 rounded-full  ml-3 animate-pulse bg-gray-400"
+                          ></div>
+                        ))}
+                      </div>
+                    ))}
                   </div>
                 }
               >

@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useMemo, type JSX } from "react";
-import Badge from "./Badge";
+
 export default function Hero() {
   const stars: JSX.Element[] = useMemo(() => {
     return [...Array(20)].map((star: undefined, starIndex: number) => (
@@ -78,7 +78,7 @@ export default function Hero() {
         ))}
       </div>
       <div className="mt-6 flex md:gap-4 justify-center text-white">
-        <Badge icon="🚀">
+        <div>
           {"5+ Years Teaching Programming"
             .split("")
             .map((letter, letterIndex) => (
@@ -94,9 +94,8 @@ export default function Hero() {
                 {letter}
               </motion.span>
             ))}
-        </Badge>
-
-        <Badge icon="🤝">
+        </div>
+        <div>
           {"AI Association Volunteer".split("").map((letter, letterIndex) => (
             <motion.span
               key={letterIndex}
@@ -110,7 +109,7 @@ export default function Hero() {
               {letter}
             </motion.span>
           ))}
-        </Badge>
+        </div>
       </div>
       <p className="mt-4 text-sm text-white text-center">
         {"Building production apps. Scaling teams through teachingr"

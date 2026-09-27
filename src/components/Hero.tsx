@@ -111,7 +111,7 @@ export default function Hero() {
           ))}
         </div>
       </div>
-      <p className="mt-4 text-sm text-white text-center">
+      {/* <p className="mt-4 text-sm text-white text-center">
         {"Building production apps. Scaling teams through teachingr"
           .split("")
           .map((letter, letterIndex) => (
@@ -127,7 +127,7 @@ export default function Hero() {
               {letter}
             </motion.span>
           ))}
-      </p>
+      </p> */}
     </div>
   );
 }

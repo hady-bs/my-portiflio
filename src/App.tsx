@@ -75,7 +75,7 @@ function App() {
                   <div className="flex flex-col gap-5 py-10 bg-primary justify-center items-center h-screen z-100">
                     {[...Array(3)].map((item, index) => (
                       <div
-                        className=" flex-1 flex flex-col gap-5 py-5 ml-12  w-full h-50 bg-gray-600 animate-pulse rounded-3xl"
+                        className=" flex-1 flex flex-col gap-5 py-5 md:ml-12  w-full h-50 bg-gray-600 animate-pulse rounded-3xl"
                         key={index + Number(item)}
                       >
                         <div className="w-6/9 h-5 rounded-full ml-3 animate-pulse bg-gray-400"></div>

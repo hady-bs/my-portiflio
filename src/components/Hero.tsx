@@ -17,7 +17,7 @@ export default function Hero() {
     ));
   }, []);
   return (
-    <div className="flex flex-col justify-evenly h-screen   sticky top-0 overflow-hidden">
+    <div className="flex flex-col md:justify-evenly md:gap-0 justify-center gap-10 h-screen   sticky top-0 overflow-hidden">
       <div className="">
         <motion.div
           initial={{ rotate: 0, scale: 1 }}
@@ -77,7 +77,7 @@ export default function Hero() {
           </motion.span>
         ))}
       </div>
-      <div className="mt-6 flex md:gap-4 justify-center text-white">
+      <div className="mt-6 flex md:gap-4 justify-center text-center text-white">
         <div>
           {"5+ Years Teaching Programming"
             .split("")
